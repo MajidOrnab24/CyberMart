@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="734.4" prefWidth="1104.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.FrontPageController">
+    <stylesheets>
+        <URL value="@frontpage.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="282.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="188.0" text="Recently Added">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="280.0" prefWidth="1104.0" vbarPolicy="NEVER">
+                     <content>
+                        <HBox fx:id="recentLayout" alignment="CENTER" prefHeight="280.0" prefWidth="1104.0" spacing="20.0" style="-fx-background-color: snow;" stylesheets="@frontpage.css">
+                           <styleClass>
+                              <String fx:value="hbox" />
+                              <String fx:value="scroll-bar" />
+                              <String fx:value="thumb" />
+                              <String fx:value="track" />
+                           </styleClass></HBox>
+                     </content>
+                  </ScrollPane>
+                  <Label prefHeight="54.0" prefWidth="234.0" text="Top rated products">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </Label>
+                  <ScrollPane prefHeight="280.0" prefWidth="1104.0" stylesheets="@frontpage.css" vbarPolicy="NEVER">
+                     <content>
+                        <HBox fx:id="ratedLayout" alignment="CENTER" prefHeight="280.0" prefWidth="1104.0" spacing="20.0" style="-fx-background-color: snow;" stylesheets="@frontpage.css">
+                           <styleClass>
+                              <String fx:value="hbox" />
+                              <String fx:value="scroll-bar" />
+                              <String fx:value="thumb" />
+                              <String fx:value="track" />
+                           </styleClass></HBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+   <styleClass>
+      <String fx:value="hbox" />
+      <String fx:value="scroll-bar" />
+      <String fx:value="thumb" />
+      <String fx:value="track" />
+   </styleClass>
+</AnchorPane>

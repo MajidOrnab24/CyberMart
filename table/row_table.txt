@@ -1,0 +1,6 @@
+CREATE TABLE `row_table` (
+  `r_pk` int NOT NULL,
+  `r_id` int NOT NULL,
+  `r_name` varchar(45) NOT NULL,
+  PRIMARY KEY (`r_pk`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

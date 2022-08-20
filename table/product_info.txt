@@ -1,0 +1,18 @@
+CREATE TABLE `product_info` (
+  `d_id_product` int NOT NULL AUTO_INCREMENT,
+  `d_name_product` varchar(45) NOT NULL,
+  `d_rating` double NOT NULL,
+  `d_brandname` varchar(45) NOT NULL,
+  `d_model` varchar(45) NOT NULL,
+  `d_price` int NOT NULL,
+  `d_stock` int NOT NULL,
+  `d_description` varchar(200) NOT NULL,
+  `d_image` varchar(100) NOT NULL,
+  `d_category` varchar(100) NOT NULL,
+  `d_rating_count` int NOT NULL,
+  `d_vendor_id` int NOT NULL,
+  `d_vendor_name` varchar(45) NOT NULL,
+  PRIMARY KEY (`d_id_product`),
+  KEY `d_vendor_id_idx` (`d_vendor_id`),
+  CONSTRAINT `d_vendor_id` FOREIGN KEY (`d_vendor_id`) REFERENCES `vendor_table` (`id_vendor`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

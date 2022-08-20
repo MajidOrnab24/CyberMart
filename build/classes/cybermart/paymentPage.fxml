@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1107.0" style="-fx-background-color: derive( #40E0D0,80%);" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.PaymentPageController">
+    <stylesheets>
+        <URL value="@paymentpage.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="addressF" layoutX="225.0" layoutY="198.0" prefHeight="34.0" prefWidth="563.0" />
+      <Label layoutX="14.0" layoutY="192.0" prefHeight="46.0" prefWidth="195.0" text="Add deliver adderess:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="23.0" prefHeight="46.0" prefWidth="90.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane fx:id="nogod" layoutX="81.75" layoutY="291.0" prefHeight="110.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="250.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/nogod.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="bkash" layoutX="423.5" layoutY="291.0" prefHeight="110.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="269.0" layoutX="4.0" layoutY="3.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bkash.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <AnchorPane layoutX="86.0" layoutY="-41.0" prefHeight="171.0" prefWidth="1107.0" style="-fx-background-color: snow;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="90.0" layoutY="130.0" prefHeight="34.0" prefWidth="76.0" text="Total Cost:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="90.0" layoutY="20.0" prefHeight="34.0" prefWidth="76.0" text="Item Cost:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="98.0" layoutY="88.0" prefHeight="34.0" prefWidth="76.0" text="Shipping:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="90.0" layoutY="54.0" prefHeight="34.0" prefWidth="76.0" text="Tax:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalL" layoutX="195.0" layoutY="130.0" prefHeight="34.0" prefWidth="216.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemL" layoutX="195.0" layoutY="20.0" prefHeight="34.0" prefWidth="216.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="shippingL" layoutX="195.0" layoutY="88.0" prefHeight="34.0" prefWidth="216.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="taxL" layoutX="195.0" layoutY="54.0" prefHeight="34.0" prefWidth="216.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="12.0" layoutY="121.0" prefHeight="0.0" prefWidth="346.0" style="-fx-background-color: black;" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="cashOnD" layoutX="765.25" layoutY="291.0" prefHeight="110.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="180.0" layoutX="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/COD.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Label fx:id="comingN" alignment="CENTER" layoutX="95.0" layoutY="430.0" prefHeight="18.0" prefWidth="228.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="comingB" alignment="CENTER" layoutX="446.0" layoutY="430.0" prefHeight="18.0" prefWidth="216.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="againTry" layoutX="280.0" layoutY="511.0" prefHeight="18.0" prefWidth="216.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="statrtedship" alignment="CENTER" layoutX="368.0" layoutY="571.0" prefHeight="34.0" prefWidth="371.0" textFill="#1100ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

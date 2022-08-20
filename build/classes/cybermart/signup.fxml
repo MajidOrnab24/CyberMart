@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="720.0" style="-fx-background-color: SNOW;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.SignupController">
+    <stylesheets>
+        <URL value="@signup.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="300.0" layoutX="41.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="35.0">
+         <image>
+            <Image url="@images/2022.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="452.0" layoutY="27.0" text="SIGN UP" underline="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="120.0" text="Name: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="S_NameField" layoutX="480.0" layoutY="119.0" prefHeight="26.0" prefWidth="213.0" promptText="Enter full name.." style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="325.0" layoutY="166.0" text="Phone No.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="S_PhoneField" layoutX="480.0" layoutY="165.0" prefHeight="26.0" prefWidth="213.0" promptText="Enter phone number" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="325.0" layoutY="210.0" text="Email:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="S_EmailField" layoutX="480.0" layoutY="209.0" prefHeight="26.0" prefWidth="213.0" promptText="Enter valid email" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="325.0" layoutY="260.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="S_UsernameField" layoutX="480.0" layoutY="259.0" prefHeight="26.0" prefWidth="213.0" promptText="Enter username" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="325.0" layoutY="304.0" text="Password:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="359.0" prefHeight="26.0" prefWidth="135.0" text="Confirm Password:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="sigupEntry" buttonType="RAISED" layoutX="503.0" layoutY="428.0" prefHeight="37.0" prefWidth="83.0" ripplerFill="BLACK" style="-fx-background-color: PALETURQUOISE;" text="Signup">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="ExitWin" buttonType="RAISED" layoutX="655.0" layoutY="517.0" prefHeight="38.0" prefWidth="50.0" ripplerFill="BLACK" style="-fx-background-color: PALETURQUOISE;" text="Exit">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="ReturnLogin" buttonType="RAISED" layoutX="334.0" layoutY="517.0" prefHeight="38.0" prefWidth="129.0" ripplerFill="BLACK" style="-fx-background-color: PALETURQUOISE;" text="Return to login">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <PasswordField fx:id="S_PasswordField" layoutX="480.0" layoutY="304.0" prefHeight="30.0" prefWidth="214.0" promptText="Enter password" style="-fx-background-color: tranparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </PasswordField>
+      <PasswordField fx:id="S_C_PasswordField" layoutX="480.0" layoutY="357.0" prefHeight="30.0" prefWidth="214.0" promptText="Re-enter password" style="-fx-background-color: tranparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </PasswordField>
+      <Label fx:id="passwordMatch" layoutX="534.0" layoutY="398.0" style="-fx-background-color: transparent;" textFill="#e40a0a" />
+      <Label fx:id="signupmessageLabel" layoutX="432.0" layoutY="86.0" />
+   </children>
+</AnchorPane>

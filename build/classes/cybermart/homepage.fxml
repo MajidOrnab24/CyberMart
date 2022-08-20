@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.HomepageController">
+    <stylesheets>
+        <URL value="@homepage.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="bordermainPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="167.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: Darkslateblue;" stylesheets="@homepage.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="6.0" prefHeight="25.0" prefWidth="190.0" text="CYBER MART" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="1255.0" maxHeight="25.0" maxWidth="24.0" minWidth="25.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: red; -fx-background-radius: 0;" text="X" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                     </children></Pane>
+                  <HBox layoutX="548.0" layoutY="-17.0" prefHeight="43.0" prefWidth="784.0" style="-fx-background-color: TURQUOISE;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <JFXButton fx:id="dashboardButton" alignment="TOP_LEFT" prefHeight="43.0" prefWidth="196.0" style="-fx-background-radius: 0;" text="Dashoard">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monitor.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                        <JFXButton fx:id="vendorButton" alignment="TOP_LEFT" layoutX="10.0" prefHeight="43.0" prefWidth="196.0" style="-fx-background-radius: 0;" text="Be a Vendor">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/cashier.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                        <JFXButton fx:id="cartButton" alignment="TOP_LEFT" layoutX="206.0" prefHeight="43.0" prefWidth="196.0" style="-fx-background-radius: 0;" text="Shopping Cart">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/shopping-cart%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                        <JFXButton fx:id="login_sign" alignment="TOP_LEFT" layoutX="402.0" prefHeight="42.0" prefWidth="195.0" style="-fx-background-radius: 0;" text="Login/Signup">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                     </children></HBox>
+                  <Label fx:id="MenuBack" alignment="TOP_LEFT" layoutY="24.0" prefHeight="42.0" prefWidth="176.0" text="Menu">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/options.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" top="9.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="Menu" alignment="TOP_LEFT" layoutY="24.0" prefHeight="42.0" prefWidth="176.0" text="Menu" textFill="#d1d1d1">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
+                           <image>
+                              <Image url="@images/options.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" top="9.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: DARKTURQUOISE;" stylesheets="@homepage.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="31.0" layoutY="154.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <JFXButton fx:id="homeButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="20.0" prefHeight="45.0" prefWidth="176.0" style="-fx-background-radius: 0;" styleClass="mainFxmlClass" text="Home">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="searchButton" alignment="TOP_LEFT" prefHeight="45.0" prefWidth="176.0" style="-fx-background-radius: 0;" styleClass="mainFxmlClass" text="Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/magnifying-glass.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="apparelsButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="176.0" style="-fx-background-radius: 0;" styleClass="sideBarItem" text="Apparels">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/shirt.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="electronicsButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="56.0" prefHeight="45.0" prefWidth="176.0" style="-fx-background-radius: 0;" text="Elecctronics">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/responsive.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="kidsButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="101.0" prefHeight="45.0" prefWidth="176.0" style="-fx-background-radius: 0;" text="Kids">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/playing.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="accesoriesButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="20.0" prefHeight="45.0" prefWidth="176.0" style="-fx-background-radius: 0;" styleClass="mainFxmlClass" text="Accesories">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/watch.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

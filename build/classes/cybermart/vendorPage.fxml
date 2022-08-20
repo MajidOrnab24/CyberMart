@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1107.0" style="-fx-background-color: snow;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.VendorPageController">
+    <stylesheets>
+        <URL value="@vendorpage.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="296.0" layoutY="254.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: snow;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="90.0" prefWidth="1107.0" style="-fx-background-color: aliceblue;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="70.0" prefWidth="249.0" text=" BE A VENDOR IN CYBER MART">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="loginButtonBack" layoutX="969.0" layoutY="7.0" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: LIGHTBLUE;" text="LOGIN">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="969.0" layoutY="5.0" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: LIGHTBLUE;" text="LOGIN">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="signupButton" layoutX="970.0" layoutY="51.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: LIGHTBLUE;" text="Signup">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="signupButtonBack" buttonType="RAISED" layoutX="970.0" layoutY="48.0" prefHeight="36.0" prefWidth="131.0" style="-fx-background-color: LIGHTBLUE;" text="Signup">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane fx:id="loginSlider" layoutX="435.0" layoutY="1.0" prefHeight="90.0" prefWidth="521.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="12.0" prefHeight="33.0" prefWidth="94.0" text="Vendor Name:">
+                           <font>
+                              <Font size="14.5" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="vNameF" layoutX="116.0" layoutY="15.0" prefHeight="28.0" prefWidth="300.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                        <Label layoutX="14.0" layoutY="43.0" prefHeight="33.0" prefWidth="94.0" text="Password">
+                           <font>
+                              <Font size="14.5" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="loginB" layoutX="425.0" layoutY="15.0" maxWidth="133.0" prefHeight="61.0" prefWidth="90.0" style="-fx-background-color: skyblue;" text="Login" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="15.0">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/login.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <PasswordField fx:id="vPassF" layoutX="116.0" layoutY="47.0" prefHeight="28.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="loginMsg" layoutX="273.0" layoutY="27.0" prefHeight="18.0" prefWidth="142.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </top>
+         <right>
+            <AnchorPane fx:id="signSlider" prefHeight="618.0" prefWidth="427.0" style="-fx-background-color: derive(skyblue,60%);" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="72.0" prefHeight="33.0" prefWidth="94.0" text="Vendor Name:">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vName" layoutX="113.0" layoutY="75.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="123.0" prefHeight="33.0" prefWidth="94.0" text="Shop name">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vShopName" layoutX="112.0" layoutY="123.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="168.0" prefHeight="33.0" prefWidth="94.0" text="Email">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vEmail" layoutX="113.0" layoutY="168.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="208.0" prefHeight="33.0" prefWidth="94.0" text="Contact no:">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vContactno" layoutX="113.0" layoutY="208.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="252.0" prefHeight="33.0" prefWidth="94.0" text="Location:">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vLocation" layoutX="113.0" layoutY="252.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="300.0" prefHeight="33.0" prefWidth="94.0" text="Password:">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutY="344.0" prefHeight="34.0" prefWidth="108.0" text="Confirm password:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="signupPush" buttonType="RAISED" layoutX="181.0" layoutY="541.0" prefHeight="43.0" prefWidth="100.0" style="-fx-background-color: Darkslateblue;" text="Signup" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="vReturn" buttonType="RAISED" layoutX="4.0" layoutY="575.0" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: Darkslateblue;" text="Return" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="126.0" layoutY="9.0" prefHeight="39.0" prefWidth="209.0" text="Provide user information">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="warning" layoutX="14.0" layoutY="403.0" prefHeight="18.0" prefWidth="180.0" textFill="RED" wrapText="true" />
+                  <JFXButton fx:id="addShoplogo" layoutX="68.0" layoutY="458.0" prefHeight="46.0" prefWidth="118.0" style="-fx-background-color: cadetblue;" text="Add shop logo" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></JFXButton>
+                  <Pane layoutX="207.0" layoutY="381.0" prefHeight="135.0" prefWidth="210.0" style="-fx-background-color: snow;">
+                     <children>
+                        <ImageView fx:id="vImage" fitHeight="135.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <PasswordField fx:id="vPassword" layoutX="115.0" layoutY="303.0" prefHeight="28.0" prefWidth="298.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: deepskyblue; -fx-background-color: mintcream;" />
+                  <PasswordField fx:id="vConfirmpass" layoutX="114.0" layoutY="347.0" prefHeight="28.0" prefWidth="298.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: deepskyblue; -fx-background-color: mintcream;" />
+               </children>
+            </AnchorPane>
+         </right>
+         <left>
+            <AnchorPane fx:id="productSlider" prefHeight="618.0" prefWidth="682.0" style="-fx-background-color: derive(#48D1CC,80%);" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="183.0" layoutY="1.0" prefHeight="41.0" prefWidth="300.0" text="Welcome to CYBER MART " textFill="#1435dc">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="22.0" layoutY="58.0" prefHeight="30.0" prefWidth="115.0" text="Name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="95.0" prefHeight="30.0" prefWidth="118.0" text="Shop name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="VPname" layoutX="155.0" layoutY="59.0" prefHeight="18.0" prefWidth="241.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="VPshopname" layoutX="155.0" layoutY="96.0" prefHeight="27.0" prefWidth="242.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="3.0" layoutY="150.0" prefHeight="1.0" prefWidth="678.0" />
+                  <Pane layoutX="529.0" layoutY="10.0" prefHeight="130.0" prefWidth="140.0" style="-fx-background-color: snow;">
+                     <children>
+                        <ImageView fx:id="VPimage" fitHeight="130.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="22.0" layoutY="153.0" prefHeight="36.0" prefWidth="240.0" text="Add a product:" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="202.0" text="Product name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pr_name" layoutX="155.0" layoutY="202.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label layoutX="22.0" layoutY="242.0" text="Brand name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pr_brand" layoutX="155.0" layoutY="242.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label layoutX="22.0" layoutY="281.0" text="Model name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pr_model" layoutX="155.0" layoutY="281.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label layoutX="22.0" layoutY="325.0" text="Price:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pr_price" layoutX="155.0" layoutY="325.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Label layoutX="19.0" layoutY="412.0" text="Description">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="pr_description" layoutX="155.0" layoutY="410.0" prefHeight="134.0" prefWidth="298.0" style="-fx-background-color: mintcream; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: skyblue;" wrapText="true" />
+                  <Pane layoutX="462.0" layoutY="284.0" prefHeight="135.0" prefWidth="210.0" style="-fx-background-color: snow;" AnchorPane.rightAnchor="8.399999999999977">
+                     <children>
+                        <ImageView fx:id="pr_image" fitHeight="135.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/product_blank.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="addproductImage" buttonType="RAISED" layoutX="529.0" layoutY="433.0" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: skyblue;" text="Add image" />
+                  <JFXButton fx:id="addProduct" buttonType="RAISED" layoutX="364.0" layoutY="565.0" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: skyblue;" text="Add product" />
+                  <Label layoutX="22.0" layoutY="368.0" text="Stock">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pr_stock" layoutX="155.0" layoutY="368.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+                  <Separator layoutX="493.0" layoutY="502.0" orientation="VERTICAL" prefHeight="109.0" prefWidth="7.0" />
+                  <Separator layoutX="501.0" layoutY="488.0" prefHeight="4.0" prefWidth="168.0" />
+                  <JFXButton fx:id="seeAllproducts" buttonType="RAISED" layoutX="514.0" layoutY="502.0" prefHeight="46.0" prefWidth="109.0" style="-fx-background-color: skyblue;" text="See all products" />
+                  <JFXButton fx:id="logout" buttonType="RAISED" layoutX="608.0" layoutY="576.0" prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: skyblue;" text="Logout" />
+                  <Label fx:id="productInfoL" layoutX="52.0" layoutY="565.0" prefHeight="20.0" prefWidth="202.0" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="pr_category" layoutX="516.0" layoutY="202.0" prefWidth="150.0" style="-fx-background-color: skyblue;" />
+                  <Label alignment="CENTER" layoutX="541.0" layoutY="171.0" prefHeight="18.0" prefWidth="100.0" text="Add category" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

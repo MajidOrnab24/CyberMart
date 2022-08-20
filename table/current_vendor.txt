@@ -1,0 +1,6 @@
+CREATE TABLE `current_vendor` (
+  `v_ID` int NOT NULL,
+  `id_vendor` int NOT NULL,
+  `vendor_name` varchar(45) NOT NULL,
+  PRIMARY KEY (`v_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

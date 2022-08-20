@@ -1,0 +1,9 @@
+CREATE TABLE `dashboard` (
+  `dash_id` int NOT NULL AUTO_INCREMENT,
+  `cart_id` int NOT NULL,
+  `shipping_time` datetime NOT NULL,
+  `shipping_address` varchar(45) NOT NULL,
+  PRIMARY KEY (`dash_id`),
+  KEY `cart_id_idx` (`cart_id`),
+  CONSTRAINT `cart_id` FOREIGN KEY (`cart_id`) REFERENCES `shopping_cart` (`cart_order_no`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

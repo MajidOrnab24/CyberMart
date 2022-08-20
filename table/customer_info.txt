@@ -1,0 +1,10 @@
+CREATE TABLE `customer_info` (
+  `customer_id` int NOT NULL AUTO_INCREMENT,
+  `d_name` varchar(45) NOT NULL,
+  `d_phone` varchar(45) NOT NULL,
+  `d_email` varchar(45) NOT NULL,
+  `d_username` varchar(45) NOT NULL,
+  `d_password` varchar(45) NOT NULL,
+  `d_cartshop` varchar(45) NOT NULL,
+  PRIMARY KEY (`customer_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

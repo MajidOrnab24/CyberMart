@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="LoginPane" prefHeight="520.0" prefWidth="720.0" style="-fx-background-color: SNOW;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="385.0" layoutY="130.0" text="Username: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="385.0" layoutY="171.0" text="Password: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/key.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="520.0" layoutY="127.0" promptText="Enter Username" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="522.0" layoutY="252.0" ripplerFill="BLACK" style="-fx-background-color: PALETURQUOISE;" text="Login">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <Text fill="#ac2020" fontSmoothingType="LCD" layoutX="480.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dont have an account? ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#2121b1" layoutX="505.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signup for free!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="signupButton" buttonType="RAISED" layoutX="518.0" layoutY="418.0" style="-fx-background-color: PALETURQUOISE;" text="Signup">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="520.0" fitWidth="360.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/wp2124843-cyber-wallpapers.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="518.0" layoutY="168.0" prefHeight="31.0" prefWidth="174.0" promptText="Enter password" style="-fx-background-color: tranparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: MINTCREAM;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </PasswordField>
+      <Label fx:id="LoginMsgLabel" layoutX="447.0" layoutY="62.0" prefHeight="20.0" prefWidth="250.0" textFill="#cc120b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

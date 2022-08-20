@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="d_anchorpane" prefHeight="708.0" prefWidth="1107.0" style="-fx-background-color: aliceblue;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.DashboardPageController">
+    <stylesheets>
+        <URL value="@dashboardpage.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="91.0" layoutY="74.0" prefHeight="100.0" prefWidth="470.0" spacing="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="708.0" prefWidth="490.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="93.0" prefWidth="550.0" text="DASHBOARD">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="50.0" prefWidth="550.0" text="  Customer Name:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cus_name" prefHeight="40.0" prefWidth="550.0" text="  ....">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label prefHeight="50.0" prefWidth="550.0" text="  Username">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cus_username" prefHeight="40.0" prefWidth="550.0" text="  ....">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label prefHeight="54.0" prefWidth="550.0" text="  Email:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cus_email" prefHeight="40.0" prefWidth="550.0" text="  .......">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label prefHeight="50.0" prefWidth="550.0" text="  Phone Number:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cus_phone" prefHeight="40.0" prefWidth="550.0" text="  .........">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <JFXButton fx:id="logoutB" buttonType="RAISED" prefHeight="44.0" prefWidth="89.0" style="-fx-background-color: derive(#5F9EA0,30%);" text="Logout" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="350.0" top="150.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox prefHeight="708.0" prefWidth="609.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="74.0" prefWidth="589.0" text="TRANSACTION HISTORY" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="transactionTable" prefHeight="640.0" prefWidth="610.0">
+                    <columns>
+                      <TableColumn fx:id="p_name" prefWidth="130.39992678165436" text="Product Name" />
+                      <TableColumn fx:id="p_quantity" prefWidth="55.2000732421875" text="Quantity" />
+                        <TableColumn fx:id="p_price" prefWidth="55.20001220703125" text="Price" />
+                        <TableColumn fx:id="p_time" prefWidth="121.5999755859375" text="Time of shipping" />
+                        <TableColumn fx:id="p_address" prefWidth="247.20010375976562" text="Delivery Address" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

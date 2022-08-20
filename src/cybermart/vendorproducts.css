@@ -1,0 +1,101 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*
+ * Empty Stylesheet file.
+ */
+
+
+    .table-row-cell:empty{
+        -fx-background-color: snow;
+    }
+    .table-row-cell:empty{
+        -fx-border-width: 0px;
+    }
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}    
+
+    .table-row-cell:filled{
+        -fx-border-color:#006666;
+        -fx-border-width: 0.5px;
+         -fx-border-insets: 0 -1 0 -1;
+    }
+    .table-column-cell:filled{
+        -fx-border-color:black;
+    }
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: black;
+}
+
+.table-view .placeholder .label {
+	-fx-text-fill: red;
+	-fx-padding:20px;
+}
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    
+}
+.table-row-cell:filled:hover {
+    -fx-background-color: #9bdce0;
+}
+/*.table-row-cell:filled:selected:hover {
+	-fx-background-color: #009999;
+}    */
+.table-row-cell:filled:selected:hover {
+	-fx-background-color: #9bdce0;
+}
+.table-row-cell:filled:selected {
+    -fx-background-color: #66ccff;
+ 	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+        
+}
+.table-row-cell:empty:selected {
+    -fx-background-color: snow;
+ 	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+        
+}
+.table-row-cell:filled{
+    -fx-background-color:snow;
+}
+.table-row-cell:empty {
+	-fx-background-color: snow;
+}
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive( #006666,80%);
+
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #006666,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+.table-view .column-header {
+    -fx-background-color: darkturquoise;
+     -fx-border-width: 0.5px;
+    -fx-border-color: #0b96a0;
+}
+.table-view {
+	-fx-border-color: snow;
+	-fx-background-color: snow; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .corner {
+	-fx-background-color: snow;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+	-fx-background-color: red;
+}
+.check-box-table-cell > .check-box:selected .box{
+	-fx-background-color: red;
+}

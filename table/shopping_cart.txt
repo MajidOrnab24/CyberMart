@@ -1,0 +1,19 @@
+CREATE TABLE `shopping_cart` (
+  `cart_order_no` int NOT NULL AUTO_INCREMENT,
+  `customer_id` int NOT NULL,
+  `product_id` int NOT NULL,
+  `product_name` varchar(45) NOT NULL,
+  `product_model` varchar(45) NOT NULL,
+  `product_brand` varchar(45) NOT NULL,
+  `product_amount` int NOT NULL,
+  `product_price` double NOT NULL,
+  `timeAndDate` datetime NOT NULL,
+  `shipping_status` varchar(45) NOT NULL,
+  `payment_status` int NOT NULL,
+  `rated_status` double NOT NULL,
+  PRIMARY KEY (`cart_order_no`),
+  KEY `customer_id_idx` (`customer_id`),
+  KEY `product_id_idx` (`product_id`),
+  CONSTRAINT `customer_id` FOREIGN KEY (`customer_id`) REFERENCES `customer_info` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `product_id` FOREIGN KEY (`product_id`) REFERENCES `product_info` (`d_id_product`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

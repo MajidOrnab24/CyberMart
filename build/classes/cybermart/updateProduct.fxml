@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="updatePane" prefHeight="618.0" prefWidth="682.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.UpdateProductController">
+    <stylesheets>
+        <URL value="@updateproduct.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="productSlider" prefHeight="618.0" prefWidth="682.0" style="-fx-background-color: derive(#48D1CC,70%);">
+         <children>
+            <Label alignment="CENTER" layoutX="183.0" layoutY="1.0" prefHeight="41.0" prefWidth="300.0" text="UPDATE PRODUCT">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="82.0" text="Product name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="up_name" layoutX="155.0" layoutY="82.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+            <Label layoutX="37.0" layoutY="123.0" text="Brand name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="up_brand" layoutX="153.0" layoutY="123.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+            <Label layoutX="35.0" layoutY="170.0" text="Model name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="up_model" layoutX="153.0" layoutY="171.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+            <Label layoutX="88.0" layoutY="223.0" text="Price:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="up_price" layoutX="153.0" layoutY="223.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+            <Label layoutX="42.0" layoutY="316.0" text="Description">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="up_description" layoutX="153.0" layoutY="316.0" prefHeight="134.0" prefWidth="298.0" style="-fx-background-color: mintcream; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: skyblue;" wrapText="true" />
+            <Pane layoutX="171.0" layoutY="468.0" prefHeight="135.0" prefWidth="210.0" style="-fx-background-color: snow;" AnchorPane.rightAnchor="301.0">
+               <children>
+                  <ImageView fx:id="up_image" fitHeight="135.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Label layoutX="87.0" layoutY="270.0" text="Stock">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="up_stock" layoutX="155.0" layoutY="270.0" prefHeight="28.0" prefWidth="298.0" style="-fx-background-color: Transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: DEEPSKYBLUE; -fx-background-color: mintcream;" />
+            <JFXButton fx:id="up_save" buttonType="RAISED" layoutX="550.0" layoutY="488.0" onMouseClicked="#up_saveClick" prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: skyblue;" text="Save">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="warningL" layoutX="465.0" layoutY="408.0" prefHeight="20.0" prefWidth="202.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="up_category" layoutX="495.0" layoutY="199.0" prefWidth="150.0" style="-fx-background-color: skyblue;" />
+            <JFXButton fx:id="up_addImage" buttonType="RAISED" layoutX="65.0" layoutY="523.0" onMouseClicked="#up_addImageClick" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: skyblue;" text="Add image">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="495.0" layoutY="157.0" prefHeight="27.0" prefWidth="150.0" text="Select category">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

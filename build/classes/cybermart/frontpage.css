@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.hbox .scroll-bar:horizontal .track,
+.hbox .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive( #006666,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+
+.hbox .scroll-bar:horizontal .thumb, .hbox .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #006666,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+

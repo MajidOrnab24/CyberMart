@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1107.0" style="-fx-background-color: derive(#40E0D0,95%);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label graphicTextGap="6.0" layoutX="342.0" layoutY="272.0" prefHeight="90.0" prefWidth="501.0" text="PLEASE LOGIN FIRST" textFill="RED" AnchorPane.rightAnchor="263.4" AnchorPane.topAnchor="272.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

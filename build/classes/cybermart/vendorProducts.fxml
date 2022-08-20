@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: derive(#5F9EA0,90%);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.VendorProductsController">
+    <stylesheets>
+        <URL value="@vendorproducts.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="p_table" layoutX="77.0" layoutY="280.0" prefHeight="666.0" prefWidth="1280.0" stylesheets="@vendorproducts.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="p_name" prefWidth="179.19997864961624" text="Product name" />
+          <TableColumn fx:id="p_brand" minWidth="0.0" prefWidth="100.00001525878906" text="Brand" />
+          <TableColumn fx:id="p_model" prefWidth="104.79998779296875" text="Model" />
+            <TableColumn fx:id="p_price" prefWidth="65.60000610351562" text="Price" />
+            <TableColumn fx:id="p_stock" prefWidth="61.60003662109375" text="Stock" />
+            <TableColumn fx:id="p_rating" prefWidth="188.00006103515625" text="Rating" />
+            <TableColumn fx:id="p_image" prefWidth="223.199951171875" text="Image" />
+            <TableColumn fx:id="p_description" prefWidth="185.599853515625" text="Description" />
+            <TableColumn fx:id="p_edit_delete" prefWidth="180.7999267578125" text="Edit or Delete" />
+        </columns>
+      </TableView>
+      <HBox layoutX="1112.0" prefHeight="46.0" spacing="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="refresh" onMouseClicked="#refreshClick" prefHeight="45.0" prefWidth="125.0" style="-fx-background-color: derive(lightgreen,10%); -fx-background-radius: 0;" text="Refresh">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="returnTomain" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: derive(red,60%); -fx-background-radius: 0;" text="Return" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

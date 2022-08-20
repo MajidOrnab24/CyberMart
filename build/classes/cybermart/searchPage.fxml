@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cybermart.SearchPageController">
+   <children>
+      <Pane prefHeight="62.0" prefWidth="784.0">
+         <children>
+            <Label layoutX="24.0" layoutY="18.0" prefHeight="30.0" prefWidth="134.0" text="Search Products:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="keywordField" layoutX="165.0" layoutY="17.0" prefHeight="31.0" prefWidth="391.0" promptText="Search Cyber Mart" />
+            <JFXButton buttonType="RAISED" layoutX="561.0" layoutY="12.0" prefHeight="31.0" prefWidth="31.0" ripplerFill="#e10909" text="Search">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="72.0" prefHeight="660.0" prefWidth="1107.0">
+         <children>
+            <TableView fx:id="productTable" prefHeight="660.0" prefWidth="1104.0" stylesheets="@searchpage.css">
+               <columns>
+                  <TableColumn fx:id="nameCol" prefWidth="112.0" text="Name" />
+                  <TableColumn fx:id="brandnameCol" prefWidth="126.40005493164062" text="Brandname" />
+                  <TableColumn fx:id="modelCol" prefWidth="114.40005493164062" text="Model" />
+                  <TableColumn fx:id="priceCol" prefWidth="56.0" text="Price" />
+                  <TableColumn fx:id="stockCol" prefWidth="60.00006103515625" text="Stock" />
+                  <TableColumn fx:id="ratingCol" prefWidth="182.4000244140625" text="Rating" />
+                  <TableColumn fx:id="imageCol" prefWidth="246.4000244140625" text="Image of Product" />
+                  <TableColumn fx:id="descriptionCol" prefWidth="204.79998779296875" text="Description" />
+               </columns>
+               <styleClass>
+                  <String fx:value="column-header" />
+                  <String fx:value="label" />
+                  <String fx:value="placeholder" />
+                  <String fx:value="table-cell" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="table-column-cell" />
+                  <String fx:value="corner" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="check-box-table-cell" />
+                  <String fx:value="check-box-table-cell" />
+                  <String fx:value="box" />
+                  <String fx:value="filler" />
+               </styleClass>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

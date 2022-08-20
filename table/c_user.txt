@@ -1,0 +1,6 @@
+CREATE TABLE `c_user` (
+  `c_ID` int NOT NULL,
+  `customer_ID` int NOT NULL,
+  `customer_name` varchar(45) NOT NULL,
+  PRIMARY KEY (`c_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
